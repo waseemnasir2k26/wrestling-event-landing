@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>IRON FIST WRESTLING — NIGHT OF CHAMPIONS | Live Pro Wrestling</title>
+<meta name="description" content="One night. Eight matches. Championship gold on the line. Get your tickets before the bell rings." />
+<meta property="og:title" content="IRON FIST WRESTLING — NIGHT OF CHAMPIONS" />
+<meta property="og:description" content="Live pro wrestling. Ringside seats going fast." />
+<meta property="og:type" content="website" />
+<meta name="theme-color" content="#0a0a0a" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          display: ['Anton', 'Bebas Neue', 'Impact', 'sans-serif'],
+          sans: ['Inter', 'system-ui', 'sans-serif'],
+        },
+        colors: {
+          ink: '#0a0a0a',
+          blood: '#e10600',
+          volt: '#f5ff2b',
+          bone: '#f5f1e8',
+        },
+      },
+    },
+  };
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { background: #0a0a0a; color: #f5f1e8; }
+  .grain::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:1;opacity:.08;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+  .halftone{background-image:radial-gradient(#0a0a0a 1px,transparent 1.4px);background-size:6px 6px}
+  .stripe{background-image:repeating-linear-gradient(135deg,#e10600 0 14px,#0a0a0a 14px 28px)}
+  .glitch{text-shadow:3px 0 #e10600, -3px 0 #f5ff2b}
+  .hover-blood:hover{background:#e10600;color:#f5f1e8;transform:translate(-2px,-2px);box-shadow:6px 6px 0 #f5ff2b}
+  .btn-primary{background:#e10600;color:#f5f1e8;box-shadow:4px 4px 0 #f5ff2b;transition:all .12s ease}
+  .btn-primary:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 #f5ff2b}
+  .card-tape{position:relative}
+  .card-tape::before{content:"";position:absolute;top:-10px;left:50%;transform:translateX(-50%) rotate(-4deg);width:88px;height:22px;background:#f5ff2b;opacity:.85;box-shadow:0 2px 0 rgba(0,0,0,.2)}
+  .ticker{white-space:nowrap;animation:tick 28s linear infinite}
+  @keyframes tick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+  .dropshadow-poster{text-shadow:6px 6px 0 #e10600, 12px 12px 0 rgba(245,255,43,.35)}
+  details[open] summary .plus{transform:rotate(45deg)}
+  summary::-webkit-details-marker{display:none}
+</style>
+</head>
+<body class="grain font-sans">
+
+<!-- STICKY BUY TICKETS -->
+<a href="#tickets" id="stickyCta" class="fixed top-4 right-4 z-50 btn-primary font-display tracking-widest text-lg md:text-xl px-5 py-3 uppercase">🎟 Buy Tickets</a>
+
+<!-- TOP BAR -->
+<header class="relative z-40 border-b border-bone/15 bg-ink/80 backdrop-blur">
+  <div class="max-w-7xl mx-auto px-5 py-3 flex items-center justify-between">
+    <a href="#" class="font-display tracking-[0.2em] text-xl md:text-2xl text-bone">IRON<span class="text-blood">/</span>FIST</a>
+    <nav class="hidden md:flex gap-7 text-sm uppercase tracking-widest text-bone/70">
+      <a href="#card" class="hover:text-volt">The Card</a>
+      <a href="#talent" class="hover:text-volt">Roster</a>
+      <a href="#venue" class="hover:text-volt">Venue</a>
+      <a href="#faq" class="hover:text-volt">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<!-- TICKER -->
+<div class="overflow-hidden bg-volt text-ink font-display tracking-widest py-2 border-y-4 border-ink">
+  <div class="ticker inline-block">
+    <span class="px-8">★ NIGHT OF CHAMPIONS ★ LIVE &amp; UNCUT ★ 8 MATCHES ★ 3 TITLES ★ ONE NIGHT ONLY ★ RINGSIDE SEATS LIMITED ★ DOORS 6:30PM ★ BELL 7:30PM ★</span>
+    <span class="px-8">★ NIGHT OF CHAMPIONS ★ LIVE &amp; UNCUT ★ 8 MATCHES ★ 3 TITLES ★ ONE NIGHT ONLY ★ RINGSIDE SEATS LIMITED ★ DOORS 6:30PM ★ BELL 7:30PM ★</span>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="relative overflow-hidden">
+  <div class="absolute inset-0 halftone opacity-20"></div>
+  <div class="absolute -left-24 top-10 w-[460px] h-[460px] bg-blood/30 rounded-full blur-3xl"></div>
+  <div class="absolute -right-24 bottom-0 w-[520px] h-[520px] bg-volt/20 rounded-full blur-3xl"></div>
+
+  <div class="relative max-w-7xl mx-auto px-5 pt-14 pb-20 md:pt-24 md:pb-32 grid md:grid-cols-12 gap-10 items-center">
+    <div class="md:col-span-7">
+      <p class="font-display tracking-[0.3em] text-volt text-sm md:text-base mb-4">SATURDAY · MAY 17, 2026 · LIVE IN THE RING</p>
+      <h1 class="font-display uppercase leading-[0.88] text-6xl md:text-8xl lg:text-9xl dropshadow-poster">
+        Night of<br/>Champions
+      </h1>
+      <p class="mt-6 text-lg md:text-xl text-bone/80 max-w-xl">
+        Eight matches. Three titles on the line. The loudest crowd in independent wrestling crashing the Grand Arena for one unforgettable night.
+      </p>
+
+      <!-- COUNTDOWN -->
+      <div class="mt-8 grid grid-cols-4 gap-3 max-w-md">
+        <div class="bg-bone text-ink text-center py-4 card-tape">
+          <div id="cdDays" class="font-display text-4xl md:text-5xl leading-none">00</div>
+          <div class="text-xs uppercase tracking-widest mt-1">Days</div>
+        </div>
+        <div class="bg-bone text-ink text-center py-4">
+          <div id="cdHours" class="font-display text-4xl md:text-5xl leading-none">00</div>
+          <div class="text-xs uppercase tracking-widest mt-1">Hours</div>
+        </div>
+        <div class="bg-bone text-ink text-center py-4">
+          <div id="cdMins" class="font-display text-4xl md:text-5xl leading-none">00</div>
+          <div class="text-xs uppercase tracking-widest mt-1">Mins</div>
+        </div>
+        <div class="bg-bone text-ink text-center py-4">
+          <div id="cdSecs" class="font-display text-4xl md:text-5xl leading-none">00</div>
+          <div class="text-xs uppercase tracking-widest mt-1">Secs</div>
+        </div>
+      </div>
+
+      <div class="mt-8 flex flex-wrap gap-4">
+        <a href="#tickets" class="btn-primary font-display tracking-widest text-xl px-8 py-4 uppercase">🎟 Get Tickets</a>
+        <a href="#card" class="border-2 border-bone text-bone font-display tracking-widest text-xl px-8 py-4 uppercase hover-blood">See the Card</a>
+      </div>
+
+      <div class="mt-8 flex items-center gap-4 text-bone/70 text-sm">
+        <span class="inline-flex items-center gap-2"><span class="w-2 h-2 bg-volt rounded-full animate-pulse"></span> 3 shows sold out in 2025</span>
+        <span>·</span>
+        <span>12,400+ fans on Instagram</span>
+      </div>
+    </div>
+
+    <!-- POSTER -->
+    <div class="md:col-span-5 relative">
+      <div class="relative bg-blood aspect-[3/4] border-[6px] border-bone shadow-[16px_16px_0_#f5ff2b] rotate-[-1.5deg]">
+        <div class="absolute inset-0 halftone opacity-30"></div>
+        <div class="absolute inset-0 flex flex-col justify-between p-6 text-bone">
+          <div class="text-center">
+            <p class="font-display tracking-[0.3em] text-sm">MAIN EVENT · TITLE MATCH</p>
+            <div class="mt-4 font-display text-5xl md:text-6xl leading-none">KID<br/>CYCLONE</div>
+            <p class="my-3 font-display text-3xl text-volt glitch">VS</p>
+            <div class="font-display text-5xl md:text-6xl leading-none">"MAD DOG"<br/>MALONE</div>
+          </div>
+          <div class="text-center border-t-2 border-bone/40 pt-4">
+            <p class="font-display tracking-widest text-sm">WORLD HEAVYWEIGHT CHAMPIONSHIP</p>
+            <p class="text-xs mt-1 text-bone/70">60-MIN TIME LIMIT · NO DQ</p>
+          </div>
+        </div>
+      </div>
+      <div class="absolute -bottom-4 -left-4 bg-volt text-ink font-display tracking-widest text-xs px-3 py-1 rotate-[-6deg]">ONE NIGHT ONLY</div>
+    </div>
+  </div>
+</section>
+
+<!-- MATCH CARD -->
+<section id="card" class="relative border-t-4 border-b-4 border-blood">
+  <div class="stripe h-3"></div>
+  <div class="max-w-7xl mx-auto px-5 py-20">
+    <div class="flex items-end justify-between flex-wrap gap-4 mb-10">
+      <h2 class="font-display uppercase text-5xl md:text-7xl">The <span class="text-blood">Card</span></h2>
+      <p class="text-bone/70 max-w-md">Card subject to change. Match order announced night of event.</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-6">
+      <!-- Match 1 -->
+      <div class="bg-bone text-ink p-6 border-4 border-ink hover:translate-x-[-4px] hover:translate-y-[-4px] hover:shadow-[8px_8px_0_#e10600] transition-all">
+        <p class="font-display tracking-widest text-blood text-sm">MAIN EVENT · WORLD TITLE</p>
+        <div class="mt-3 flex items-center justify-between gap-4">
+          <div class="font-display text-3xl md:text-4xl leading-none">KID CYCLONE</div>
+          <div class="font-display text-2xl text-blood">VS</div>
+          <div class="font-display text-3xl md:text-4xl leading-none text-right">"MAD DOG" MALONE</div>
+        </div>
+        <p class="mt-4 text-sm text-ink/70">60-min time limit · No disqualification</p>
+      </div>
+      <!-- Match 2 -->
+      <div class="bg-bone text-ink p-6 border-4 border-ink hover:translate-x-[-4px] hover:translate-y-[-4px] hover:shadow-[8px_8px_0_#e10600] transition-all">
+        <p class="font-display tracking-widest text-blood text-sm">TAG TEAM TITLES · LADDER MATCH</p>
+        <div class="mt-3 flex items-center justify-between gap-4">
+          <div class="font-display text-3xl md:text-4xl leading-none">THE VELOCITY BROTHERS</div>
+          <div class="font-display text-2xl text-blood">VS</div>
+          <div class="font-display text-3xl md:text-4xl leading-none text-right">THE RAZORS</div>
+        </div>
+        <p class="mt-4 text-sm text-ink/70">First team to retrieve belts wins</p>
+      </div>
+      <!-- Match 3 -->
+      <div class="bg-bone text-ink p-6 border-4 border-ink hover:translate-x-[-4px] hover:translate-y-[-4px] hover:shadow-[8px_8px_0_#e10600] transition-all">
+        <p class="font-display tracking-widest text-blood text-sm">WOMEN'S CHAMPIONSHIP</p>
+        <div class="mt-3 flex items-center justify-between gap-4">
+          <div class="font-display text-3xl md:text-4xl leading-none">QUEEN ARIA</div>
+          <div class="font-display text-2xl text-blood">VS</div>
+          <div class="font-display text-3xl md:text-4xl leading-none text-right">NOVA STRIKE</div>
+        </div>
+        <p class="mt-4 text-sm text-ink/70">30-min time limit · Falls count anywhere</p>
+      </div>
+      <!-- Match 4 -->
+      <div class="bg-bone text-ink p-6 border-4 border-ink hover:translate-x-[-4px] hover:translate-y-[-4px] hover:shadow-[8px_8px_0_#e10600] transition-all">
+        <p class="font-display tracking-widest text-blood text-sm">#1 CONTENDER GAUNTLET</p>
+        <div class="mt-3 font-display text-2xl md:text-3xl leading-tight">8-MAN · WINNER TAKES TITLE SHOT</div>
+        <p class="mt-4 text-sm text-ink/70">Featuring: REX TITAN · DANNY DELGADO · THE PROFESSOR · +5 more</p>
+      </div>
+      <!-- Match 5-8 compact -->
+      <div class="md:col-span-2 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="bg-ink border-2 border-bone/30 p-4">
+          <p class="font-display text-volt text-xs tracking-widest">OPENER</p>
+          <p class="font-display text-xl mt-1">JETT VS. BRICK</p>
+        </div>
+        <div class="bg-ink border-2 border-bone/30 p-4">
+          <p class="font-display text-volt text-xs tracking-widest">GRUDGE</p>
+          <p class="font-display text-xl mt-1">HAZE VS. CROW</p>
+        </div>
+        <div class="bg-ink border-2 border-bone/30 p-4">
+          <p class="font-display text-volt text-xs tracking-widest">TAG</p>
+          <p class="font-display text-xl mt-1">THE OUTCASTS VS. NEW BLOOD</p>
+        </div>
+        <div class="bg-ink border-2 border-bone/30 p-4">
+          <p class="font-display text-volt text-xs tracking-widest">DARK MATCH</p>
+          <p class="font-display text-xl mt-1">SURPRISE DEBUT</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TALENT ROSTER -->
+<section id="talent" class="bg-bone text-ink py-20">
+  <div class="max-w-7xl mx-auto px-5">
+    <div class="flex items-end justify-between flex-wrap gap-4 mb-10">
+      <h2 class="font-display uppercase text-5xl md:text-7xl">The <span class="text-blood">Roster</span></h2>
+      <p class="text-ink/70 max-w-md">Twelve of the hungriest names in the independents. One ring. Zero mercy.</p>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+      <!-- wrestler cards -->
+      <div class="relative group"><div class="aspect-[3/4] bg-ink halftone"></div><div class="absolute bottom-0 left-0 right-0 bg-blood text-bone p-2 font-display tracking-widest">KID CYCLONE</div></div>
+      <div class="relative group"><div class="aspect-[3/4] bg-ink halftone"></div><div class="absolute bottom-0 left-0 right-0 bg-ink text-bone p-2 font-display tracking-widest">"MAD DOG" MALONE</div></div>
+      <div class="relative group"><div class="aspect-[3/4] bg-ink halftone"></div><div class="absolute bottom-0 left-0 right-0 bg-blood text-bone p-2 font-display tracking-widest">QUEEN ARIA</div></div>
+      <div class="relative group"><div class="aspect-[3/4] bg-ink halftone"></div><div class="absolute bottom-0 left-0 right-0 bg-ink text-bone p-2 font-display tracking-widest">NOVA STRIKE</div></div>
+      <div class="relative group"><div class="aspect-[3/4] bg-ink halftone"></div><div class="absolute bottom-0 left-0 right-0 bg-blood text-bone p-2 font-display tracking-widest">REX TITAN</div></div>
+      <div class="relative group"><div class="aspect-[3/4] bg-ink halftone"></div><div class="absolute bottom-0 left-0 right-0 bg-ink text-bone p-2 font-display tracking-widest">DANNY DELGADO</div></div>
+      <div class="relative group"><div class="aspect-[3/4] bg-ink halftone"></div><div class="absolute bottom-0 left-0 right-0 bg-ink text-bone p-2 font-display tracking-widest">VELOCITY BROS</div></div>
+      <div class="relative group"><div class="aspect-[3/4] bg-ink halftone"></div><div class="absolute bottom-0 left-0 right-0 bg-blood text-bone p-2 font-display tracking-widest">THE RAZORS</div></div>
+      <div class="relative group"><div class="aspect-[3/4] bg-ink halftone"></div><div class="absolute bottom-0 left-0 right-0 bg-ink text-bone p-2 font-display tracking-widest">JETT</div></div>
+      <div class="relative group"><div class="aspect-[3/4] bg-ink halftone"></div><div class="absolute bottom-0 left-0 right-0 bg-blood text-bone p-2 font-display tracking-widest">BRICK</div></div>
+      <div class="relative group"><div class="aspect-[3/4] bg-ink halftone"></div><div class="absolute bottom-0 left-0 right-0 bg-ink text-bone p-2 font-display tracking-widest">THE PROFESSOR</div></div>
+      <div class="relative group"><div class="aspect-[3/4] bg-ink halftone"></div><div class="absolute bottom-0 left-0 right-0 bg-blood text-bone p-2 font-display tracking-widest">+ SURPRISE</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- TICKETS -->
+<section id="tickets" class="relative py-20 bg-ink">
+  <div class="absolute inset-0 halftone opacity-10"></div>
+  <div class="relative max-w-7xl mx-auto px-5">
+    <h2 class="font-display uppercase text-5xl md:text-7xl text-center">Lock in your <span class="text-volt">seat</span></h2>
+    <p class="text-center mt-3 text-bone/70">Ringside sells out first. No refunds · All sales final · 18+ unless accompanied by adult.</p>
+
+    <div class="mt-12 grid md:grid-cols-3 gap-6">
+      <!-- GA -->
+      <div class="bg-bone text-ink p-8 border-4 border-ink">
+        <p class="font-display tracking-widest text-sm">GENERAL ADMISSION</p>
+        <div class="mt-2 font-display text-6xl leading-none">$25</div>
+        <ul class="mt-6 space-y-2 text-sm">
+          <li>✓ Arena floor access</li>
+          <li>✓ First-come seating</li>
+          <li>✓ Full 8-match card</li>
+        </ul>
+        <a href="#" data-tier="ga" class="mt-8 block text-center btn-primary font-display tracking-widest py-3 uppercase">Buy GA</a>
+      </div>
+      <!-- RINGSIDE -->
+      <div class="bg-volt text-ink p-8 border-4 border-ink relative scale-[1.02] shadow-[10px_10px_0_#e10600]">
+        <div class="absolute -top-3 left-6 bg-blood text-bone font-display tracking-widest text-xs px-3 py-1">MOST POPULAR</div>
+        <p class="font-display tracking-widest text-sm">RINGSIDE</p>
+        <div class="mt-2 font-display text-6xl leading-none">$65</div>
+        <ul class="mt-6 space-y-2 text-sm">
+          <li>✓ Front 3 rows — guaranteed</li>
+          <li>✓ Priority entry (doors 6:00PM)</li>
+          <li>✓ Exclusive program</li>
+          <li>✓ Discount on merch</li>
+        </ul>
+        <a href="#" data-tier="ringside" class="mt-8 block text-center bg-ink text-bone font-display tracking-widest py-3 uppercase hover:bg-blood transition">Buy Ringside</a>
+      </div>
+      <!-- VIP -->
+      <div class="bg-bone text-ink p-8 border-4 border-ink">
+        <p class="font-display tracking-widest text-sm">VIP + MEET &amp; GREET</p>
+        <div class="mt-2 font-display text-6xl leading-none">$150</div>
+        <ul class="mt-6 space-y-2 text-sm">
+          <li>✓ Everything in Ringside</li>
+          <li>✓ Pre-show meet &amp; greet</li>
+          <li>✓ Signed poster + photo op</li>
+          <li>✓ Backstage tour</li>
+          <li>✓ Only 40 available</li>
+        </ul>
+        <a href="#" data-tier="vip" class="mt-8 block text-center btn-primary font-display tracking-widest py-3 uppercase">Buy VIP</a>
+      </div>
+    </div>
+
+    <!-- Eventbrite embed placeholder -->
+    <div id="eventbrite-mount" class="mt-12 p-6 border-2 border-dashed border-bone/30 text-center text-bone/60 text-sm">
+      <p class="font-display tracking-widest text-volt">EVENTBRITE EMBED MOUNT</p>
+      <p class="mt-2">Replace this block with your Eventbrite Embedded Checkout widget.<br/>See <code class="text-volt">js/tickets.js</code> for integration stub.</p>
+    </div>
+  </div>
+</section>
+
+<!-- VENUE -->
+<section id="venue" class="py-20 border-t-4 border-bone/10">
+  <div class="max-w-7xl mx-auto px-5 grid md:grid-cols-2 gap-10 items-center">
+    <div>
+      <h2 class="font-display uppercase text-5xl md:text-7xl">The <span class="text-blood">Arena</span></h2>
+      <p class="mt-4 text-bone/80 text-lg">GRAND ARENA · 2,400 capacity · full bar · indoor · wheelchair accessible.</p>
+      <div class="mt-6 space-y-3 text-bone/90">
+        <p><span class="font-display text-volt tracking-widest text-sm">ADDRESS</span><br/>123 Main Street, Your City, ST 00000</p>
+        <p><span class="font-display text-volt tracking-widest text-sm">DOORS</span> 6:30 PM · <span class="font-display text-volt tracking-widest text-sm">BELL</span> 7:30 PM</p>
+        <p><span class="font-display text-volt tracking-widest text-sm">PARKING</span> On-site lot ($10) · Street parking free after 6 PM</p>
+      </div>
+      <a href="https://maps.google.com" target="_blank" rel="noopener" class="mt-6 inline-block btn-primary font-display tracking-widest px-6 py-3 uppercase">Get Directions</a>
+    </div>
+    <div class="aspect-video bg-bone/10 border-4 border-bone/20 flex items-center justify-center text-bone/40 font-display tracking-widest">
+      [ GOOGLE MAPS EMBED ]
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="bg-bone text-ink py-20">
+  <div class="max-w-3xl mx-auto px-5">
+    <h2 class="font-display uppercase text-5xl md:text-7xl">FAQ</h2>
+    <div class="mt-8 divide-y-2 divide-ink">
+      <details class="py-5 group">
+        <summary class="flex items-center justify-between cursor-pointer font-display text-2xl">Is there an age limit? <span class="plus transition-transform font-display text-blood text-3xl">+</span></summary>
+        <p class="mt-3 text-ink/80">All ages welcome. Under 16 must be accompanied by an adult. Some matches contain mature content.</p>
+      </details>
+      <details class="py-5 group">
+        <summary class="flex items-center justify-between cursor-pointer font-display text-2xl">Are refunds available? <span class="plus transition-transform font-display text-blood text-3xl">+</span></summary>
+        <p class="mt-3 text-ink/80">All ticket sales are final. If the event is canceled, you'll be refunded automatically through Eventbrite.</p>
+      </details>
+      <details class="py-5 group">
+        <summary class="flex items-center justify-between cursor-pointer font-display text-2xl">Can I bring a camera? <span class="plus transition-transform font-display text-blood text-3xl">+</span></summary>
+        <p class="mt-3 text-ink/80">Phones and point-and-shoot cameras yes. Professional cameras, tripods, and flash require a press pass — email us.</p>
+      </details>
+      <details class="py-5 group">
+        <summary class="flex items-center justify-between cursor-pointer font-display text-2xl">Is re-entry allowed? <span class="plus transition-transform font-display text-blood text-3xl">+</span></summary>
+        <p class="mt-3 text-ink/80">Yes — hand stamp required. Keep it visible for door staff.</p>
+      </details>
+      <details class="py-5 group">
+        <summary class="flex items-center justify-between cursor-pointer font-display text-2xl">How do I buy merch at the show? <span class="plus transition-transform font-display text-blood text-3xl">+</span></summary>
+        <p class="mt-3 text-ink/80">Cash and all major cards accepted at the merch table. Wrestlers sign at intermission.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FOOTER -->
+<section class="stripe py-16">
+  <div class="max-w-4xl mx-auto px-5 text-center">
+    <h2 class="font-display uppercase text-5xl md:text-7xl text-bone dropshadow-poster">Don't miss the bell</h2>
+    <a href="#tickets" class="mt-8 inline-block bg-volt text-ink font-display tracking-widest text-2xl px-10 py-5 uppercase shadow-[8px_8px_0_#0a0a0a] hover:translate-x-[-3px] hover:translate-y-[-3px] transition">🎟 Secure Your Seat</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-ink border-t border-bone/10 py-10">
+  <div class="max-w-7xl mx-auto px-5 grid md:grid-cols-3 gap-6 text-sm text-bone/60">
+    <div>
+      <p class="font-display tracking-[0.2em] text-bone text-xl">IRON<span class="text-blood">/</span>FIST WRESTLING</p>
+      <p class="mt-2">Independent pro wrestling. Live. Loud. Unapologetic.</p>
+    </div>
+    <div>
+      <p class="font-display tracking-widest text-volt">CONTACT</p>
+      <p class="mt-2">press@ironfistwrestling.com</p>
+      <p>booking@ironfistwrestling.com</p>
+    </div>
+    <div class="flex md:justify-end gap-4">
+      <a href="#" class="hover:text-volt">Instagram</a>
+      <a href="#" class="hover:text-volt">TikTok</a>
+      <a href="#" class="hover:text-volt">YouTube</a>
+      <a href="#" class="hover:text-volt">X</a>
+    </div>
+  </div>
+  <p class="text-center text-bone/40 text-xs mt-8">© 2026 Iron Fist Wrestling. All rights reserved.</p>
+</footer>
+
+<script>
+  // Countdown — set to event date (placeholder May 17 2026 19:30 local).
+  const EVENT = new Date('2026-05-17T19:30:00').getTime();
+  const pad = (n) => String(n).padStart(2, '0');
+  function tick(){
+    const diff = EVENT - Date.now();
+    if(diff <= 0){ ['Days','Hours','Mins','Secs'].forEach(k=>document.getElementById('cd'+k).textContent='00'); return; }
+    const d = Math.floor(diff / 86400000);
+    const h = Math.floor((diff % 86400000) / 3600000);
+    const m = Math.floor((diff % 3600000) / 60000);
+    const s = Math.floor((diff % 60000) / 1000);
+    document.getElementById('cdDays').textContent = pad(d);
+    document.getElementById('cdHours').textContent = pad(h);
+    document.getElementById('cdMins').textContent = pad(m);
+    document.getElementById('cdSecs').textContent = pad(s);
+  }
+  tick(); setInterval(tick, 1000);
+
+  // Sticky CTA hide on footer
+  const cta = document.getElementById('stickyCta');
+  const footer = document.querySelector('footer');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => cta.style.opacity = e.isIntersecting ? '0' : '1');
+  });
+  io.observe(footer);
+</script>
+
+</body>
+</html>
