@@ -2,6 +2,10 @@
 
 Static landing page for a pro wrestling event. Built as a speculative demo for a client pitch.
 
+## Status
+
+Last reviewed: September 2026 · release v2026.09
+
 ## Stack
 
 - Single `index.html` — Tailwind CDN, Google Fonts (Anton / Bebas Neue / Inter)
