@@ -2,6 +2,13 @@
 
 All notable changes to this project are documented in this file.
 
+## [2026.10] - 2026-10-12
+
+- wrestling-event-landing is a public static landing page for 'Iron Fist Wrestling - Night of Champions', a speculative client-pitch demo (single `index.html`, Tailwind CDN, `vercel.json` security headers).
+- Current state: initial build commit 2026-04-22 is the last functional change; sections include hero countdown, match card, 12-slot roster, ticket tiers and an empty Eventbrite mount.
+- Reviewed October 2026: README has no external links to check; Work with SkynetLabs section added. No markup or styling changed.
+- Known gaps: hard-coded event date 2026-05-17 is now past; eight ticket/CTA links are still `href="#"`; roster portraits are placeholder divs; no LICENSE or package.json.
+
 ## [2026.09] - 2026-09-16
 
 - Maintenance review of `wrestling-event-landing` — a static landing page for "Iron Fist Wrestling — Night of Champions", built as a speculative demo for a client pitch.
